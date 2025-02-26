@@ -1,4 +1,5 @@
 import abstracaoEncap.Person;
+import records.PersonR;
 
 import java.util.Scanner;
 
@@ -6,9 +7,8 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        var male = new Person("Alison");
-        male.getAge();
+        var person = new PersonR("Alison", 31);
 
-        System.out.println("Nome " + male.getName() + " - Idade " + male.getAge());
+        System.out.println(person.name() + person.age());
     }
 }
